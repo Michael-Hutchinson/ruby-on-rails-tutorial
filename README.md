@@ -1,41 +1,35 @@
-# Ruby on Rails Tutorial sample application
+# Ruby on Rails Leeds Beckett Assignment
 
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+This is my assignment work you can find the heroku server at:
 
-## License
-
-All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+```
+https://gentle-meadow-89030.herokuapp.com/
+```
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started either create a new account or login with the Admin account below:
 
 ```
-$ bundle install --without production
+Admin Details:
+Email: example@assignment.org
+Password: qwerty1
 ```
 
-Next, migrate the database:
+## Application Features
+
+The application has many different features which are listed below:
 
 ```
-$ rails db:migrate
+Static Pages
+Dynamic Pages
+Bootstrap
+Users can Register and activate their account via email
+Users can Login
+Users can obtain a forgotten password email
+Update Edit Delete functions
+Users can post microposts
+Users can follow and unfollow other users
+Admin can delete users
+Images can be uploaded
 ```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
