@@ -52,7 +52,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
-host = 'rails-tutorial-mhartl.c9users.io'     # Cloud IDE
+host = 'rails-tutorial-itshutchy.c9users.io'     # Cloud IDE
 config.action_mailer.default_url_options = { host: host, protocol: 'https' }
   
 end
