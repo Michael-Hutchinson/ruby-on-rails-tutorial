@@ -3,15 +3,19 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
 
-  def index
-    @users = User.where(activated: FILL_IN).paginate(page: params[:page])
-  end
+def index
+  @users = User. where(activated: true) . paginate(page: params[:page] )
+end
 
 
-  def show
-    @user = User.find(params[:id])
-    redirect_to root_url and return unless FILL_IN
-  end
+def show
+  @user = User. find(params[:id] )
+  redirect_to root_url and return unless true
+end
+
+def activate
+    update_columns(activated: true, activated_at: Time.zone.now)
+end
 
   def new
     @user = User.new

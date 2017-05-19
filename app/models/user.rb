@@ -40,9 +40,9 @@ class User < ApplicationRecord
     update_attribute(:remember_digest, nil)
   end
   
-  # Activates an account.
   def activate
-    update_columns(activated: FILL_IN, activated_at: FILL_IN)
+    update_attribute(:activated,    true)
+    update_attribute(:activated_at, Time.zone.now)
   end
 
   # Sends activation email.
@@ -58,8 +58,8 @@ class User < ApplicationRecord
     end
 
     # Creates and assigns the activation token and digest.
-    def create_activation_digest
-      self.activation_token  = User.new_token
-      self.activation_digest = User.digest(activation_token)
-    end
+ def create_activation_digest
+    self.activation_token  = User.new_token
+    self.activation_digest = User.digest(activation_token) 
+  end
 end
